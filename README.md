@@ -16,8 +16,7 @@ shared prefix and simulator checkpoint. The primary comparison is C versus B.
 | [AppWorld](https://github.com/StonyBrookNLP/appworld) | `42b5bcf3cd334fee33f0c37c02070a9f5807add5` | 0.2.0 |
 
 Benchmark data, simulator state, and raw execution logs stay out of Git.
-The model provider and trial budget are pending. Offline checks do not require a
-model API key.
+Offline checks do not require a model API key.
 
 ## Offline verification
 
@@ -26,7 +25,7 @@ scripted tool calls with evaluator data. Its result is a measurement check,
 separate from the planned A/B/C model runs.
 
 ```sh
-python3 -m unittest discover -s tests -v
+.venv/bin/python -m unittest discover -s tests -v
 export APPWORLD_ROOT="$PWD/.appworld"
 export APPWORLD_CACHE="$APPWORLD_ROOT/cache"
 export IPYTHONDIR="$APPWORLD_ROOT/ipython"
@@ -56,3 +55,32 @@ if [ ! -d "$APPWORLD_ROOT/data/tasks" ]; then
   .venv/bin/appworld download data
 fi
 ```
+
+## DeepSeek Flash pilot
+
+The pilot uses the official `deepseek-flash` model with thinking disabled and
+temperature 0, plus a fixed same-case tool list for A, B, and C. Five independent
+base tasks are used for debugging only. The model receives the AppWorld task
+instruction, visible tool outputs, and the intervention text. Ground-truth
+data and trajectory scoring stay local.
+
+```sh
+export APPWORLD_ROOT="$PWD/.appworld"
+export APPWORLD_CACHE="$APPWORLD_ROOT/cache"
+export IPYTHONDIR="$APPWORLD_ROOT/ipython"
+mkdir -p "$IPYTHONDIR"
+.venv/bin/python -m scripts.pilot --validate-local
+.venv/bin/python -u -m scripts.pilot
+```
+
+The last command requires authorized API access. Set `DEEPSEEK_API_KEY` in the
+local `.env`. The runner checks a cumulative $1 pilot budget before each call
+using peak, non-cached input and output prices. Use the same command to resume
+with `artifacts/pilot-flash/` intact. Completed prefixes and branches are
+reused, and `usage.jsonl` carries forward prior calls, including any unresolved
+reservations. `r2/status.json` records the per-branch results. The pilot uses an
+eight-turn common-prefix limit, an eighteen-turn continuation limit, and
+records the actual injection boundary for each case. When the API proposes
+multiple calls in one turn, the runner considers the first and records how
+many other calls were proposed. Each branch keeps its final snapshot and raw
+trace even if scoring stops.

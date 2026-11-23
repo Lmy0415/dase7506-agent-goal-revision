@@ -82,17 +82,22 @@ def write(world, audit, case_id, app, tool, effect, access_token, **arguments):
     return response.json()
 
 
-def evaluate_revised(world, case):
+def model_pair(world):
     task = world.task
-    gt = task.ground_truth
     start = task.model_collection
     end = world.models
-    models = ModelCollectionPair(
+    return ModelCollectionPair(
         start_db_home_path=start.from_db_home_path,
         start_model_collection=start,
         end_db_home_path=end.to_db_home_path,
         end_model_collection=end,
     )
+
+
+def evaluate_revised(world, case):
+    task = world.task
+    gt = task.ground_truth
+    models = model_pair(world)
     namespace = {}
     exec(compile(case["evaluation_code"], f"intervention-{case['intervention_idx']}", "exec"), namespace)
     tracker = TestTracker(test_data=None, difficulty=gt.metadata["difficulty"], suppress_errors=True)
