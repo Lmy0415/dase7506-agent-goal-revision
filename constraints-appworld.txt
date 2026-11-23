@@ -1,0 +1,6 @@
+# Compatible versions verified with AppWorld 42b5bcf and Python 3.11.
+fastapi==0.121.3
+pydantic==2.12.5
+sqlalchemy==2.0.44
+sqlmodel==0.0.27
+starlette==0.50.0
