@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+.venv/
+.appworld/
+.upstream/
+.cache/
+__pycache__/
+.pytest_cache/
+artifacts/
+logs/
+runs/
+data/
