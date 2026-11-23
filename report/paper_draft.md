@@ -2,7 +2,7 @@
 
 ## Abstract
 
-A user may replace a target or withdraw part of an instruction while a tool-using agent is working. An end-state evaluator can accept a trajectory in which the agent first carried out a withdrawn action and later reverted it. We study this distinction in AppWorld using Swap and partial Drop interventions from InterventionBench. We compare direct continuation, full replanning, and local plan revision from the same simulator checkpoint. The evaluation records successful post-update writes, revised-task completion, and model usage.
+A user may replace a target or withdraw part of an instruction while a tool-using agent is working. An end-state evaluator can accept a trajectory in which the agent first carried out a withdrawn action and later reverted it. We study this distinction in AppWorld using Swap and partial Drop interventions from InterventionBench. On 13 tasks with verified opportunities for an obsolete write, direct continuation, full replanning, and local plan revision achieved 6, 7, and 6 strict successes under the frozen evaluator. One of 39 branches committed an obsolete write and failed its end-state checks. The observed miss rate among final passes was 0/19. Controlled traces separately established that reversion can hide an obsolete write from the end-state checks.
 
 ## Introduction
 
@@ -30,12 +30,45 @@ Final pass combines the revised AppWorld assertions with a successful task-compl
 
 ## Experiments and Results
 
-Formal results will be filled from the frozen manifest, per-task report files, and usage ledger.
+### Setup
+
+We screened 24 independent task families with DeepSeek Flash using the original goal, at most 20 model calls including the initial plan, and no revised instructions. Thirteen reached the intended boundary and the pending old write committed on an isolated replay. The other 11 cases reached the prefix call limit (10) or ended before the boundary (1). The frozen evaluation included 4 Swap and 9 partial Drop cases. Nine checkpoints already contained at least one successful write.
+
+Each strategy ran once per case with thinking disabled and temperature zero. The continuation allowance was 24 model calls, 180,000 input tokens, and 12,288 output tokens, with at most 512 output tokens per response. A plan-format error ended the branch. Transient provider errors had up to two retries, with all attempts metered. We obtained all 39 branch scores.
+
+### End-state and trajectory outcomes
+
+| Strategy | Final pass | Committed violation | Strict success | Misses among final passes |
+| --- | ---: | ---: | ---: | ---: |
+| A. Direct continuation | 6/13 | 0/13 | 6/13 | 0/6 |
+| B. Full replanning | 7/13 | 1/13 | 7/13 | 0/7 |
+| C. Local plan revision | 6/13 | 0/13 | 6/13 | 0/6 |
+
+These are the frozen-evaluator counts. The primary comparison had one strict-success loss and no gain for C relative to B, a difference of −7.7 percentage points (95% task-family bootstrap interval [−23.1, 0.0]). C stopped on invalid plan edits in three cases. The strict-success difference came from the alarm-snooze Swap, where B updated the weekend alarm and C failed to provide one valid edit per old step. The two other format failures occurred on tasks where B also failed its end-state checks. Replanning and local revision used 36 and 31 post-update model calls, respectively, including plan calls. Direct continuation used 21. Early stops can reduce these usage counts.
+
+The single committed violation occurred when a user narrowed an export to one note. B then created a file for another note. The API returned 200, the file-system digest changed, and the end-state evaluator rejected the result. In a separate partial Drop case, A preserved ten earlier text-message deletions and completed the revised task without issuing the pending voice-message deletion. In offline measurement checks for an alarm Swap and a playlist Drop, the clean trace and the trace with a successful obsolete write followed by reversion produced equal monitored final states. The trajectory scorer distinguished both pairs.
+
+[Rebuilt results and stratified counts](results.md) · [Frozen manifest](../protocol/formal-v1.json)
+
+### Sensitivity to an upstream evaluator error
+
+The evaluator for the resignation-draft case used `gmail.EmailAttachment`, a model name absent from the pinned AppWorld schema. The correct model name is `gmail.Attachment`. We corrected the two references and replayed the scorer on all 39 saved final states. Only A and B on that case changed from failure to success. C had already stopped on a malformed plan. The corrected strict counts were 7/13, 8/13, and 6/13 for A, B, and C. The corrected C–B difference was −15.4 percentage points (95% interval [−38.5, 0.0]). The counts of forbidden commits remained 0, 1, and 0, and the observed miss rate was 0/21. [Sensitivity table](results_corrected.md)
 
 ## Limitations
 
-The study is conditional on the old-goal agent proposing an observable obsolete write. Tasks that do not reach the boundary within the prefix budget provide information about coverage and do not enter the paired comparison. The task-specific tool lists and effect mappings restrict the settings in which violations can be observed. AppWorld simplifies external side effects, and this study uses one model. Each retained constraint has a separate denominator when the case has an independently annotated assertion.
+The study is conditional on the old-goal agent proposing an observable obsolete write. Tasks that ran out of prefix calls contribute to coverage statistics. Candidate construction was manual, the final sample was small, and the two intervention types were unevenly represented. Task-specific tool lists and effect mappings restrict the violations that can be observed. AppWorld simplifies external side effects, and the study uses one hosted model.
+
+Strict success incorporates the plan format and the supervisor completion call. The comparison therefore covers the implemented strategies, including their interfaces. For a malformed plan, the trace records the validation failure and any preceding operations. The discarded response text is unavailable for finer error analysis. Retained-constraint rates use the independently annotated subset of constraints. The intervals reflect resampling within the screened sample, with limited information about performance on other tasks.
 
 ## Conclusion
 
-The paired evaluation connects end-state outcomes to evidence about when an agent performed an operation. Conclusions about the relative performance of the three strategies will follow the frozen run.
+The paired evaluation identified one successful obsolete write that also failed the end-state checks. No live end-state pass concealed a committed violation in either scoring analysis. Full replanning had one more strict success than local revision under the frozen evaluator and two more after the schema correction. Both intervals reached zero. Together with the controlled reversion cases, these results specify what the trajectory measurement can detect and where a larger comparison is needed.
+
+<!-- Draft self-review
+Contribution: The endpoint and trajectory outcomes are defined separately and compared on the same branches.
+Clarity: The shared prefix, inclusion rule, intervention, and three continuation policies are stated in execution order.
+Experimental strength: The counts and paired interval are explicit. The text avoids a general ranking.
+Evaluation completeness: The paper gives denominators, branch failures, and two audited real traces. Standalone revised-goal runs are outside this design.
+Method soundness: Eligibility depends only on the old-goal prefix. Each strategy pays for any planning call under the same ceiling.
+Claim-evidence map: 0/19 frozen final misses comes from the rebuilt table. The committed write example is case 275/B at operation 7. The reversion claim comes from the two offline probes. The format failure example is case 386/C.
+-->

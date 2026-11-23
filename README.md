@@ -106,10 +106,12 @@ mkdir -p "$IPYTHONDIR" artifacts/formal-flash
 .venv/bin/python -m scripts.formal --freeze protocol/formal-v1.json
 .venv/bin/python -u -m scripts.formal --run protocol/formal-v1.json --workers 4
 .venv/bin/python -m scripts.analyze_formal protocol/formal-v1.json --output report/results.md
+.venv/bin/python -m scripts.rescore_formal protocol/formal-v1.json --output report/results_corrected.md
 ```
 
 The screening and formal execution commands require API authorization. Resume
 with the same commands and local artifacts. After freezing, reuse the manifest
 and run command. The formal runner verifies the manifest's implementation,
 dataset, and prefix digests before calling the model. The [paper draft](report/paper_draft.md)
-describes the research question and method.
+describes the research question, method, and results. The [frozen table](report/results.md)
+and [offline sensitivity table](report/results_corrected.md) are separately reproducible.
