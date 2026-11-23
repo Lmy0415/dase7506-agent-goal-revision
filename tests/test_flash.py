@@ -25,9 +25,9 @@ class BudgetTest(unittest.TestCase):
         return [json.loads(line) for line in self.path.read_text().splitlines()]
 
     def test_budget_checked_before_network(self):
-        with patch("flash.PILOT_CAP", 1):
-            with self.assertRaisesRegex(ModelServiceError, "budget"):
-                self.client.request("test", MESSAGES, max_tokens=1)
+        self.client.cap = 1
+        with self.assertRaisesRegex(ModelServiceError, "budget"):
+            self.client.request("test", MESSAGES, max_tokens=1)
         self.post.assert_not_called()
 
     def test_records_reservation_and_peak_upper_bound(self):
@@ -49,7 +49,7 @@ class BudgetTest(unittest.TestCase):
             self.client.request("test", MESSAGES, max_tokens=1)
         reserved, timeout = self.entries()
         self.assertEqual(timeout["charge_upper_nanos"], reserved["charge_upper_nanos"])
-        with patch("flash.PILOT_CAP", reserved["charge_upper_nanos"]):
-            with self.assertRaisesRegex(ModelServiceError, "budget"):
-                self.client.request("retry", MESSAGES, max_tokens=1)
+        self.client.cap = reserved["charge_upper_nanos"]
+        with self.assertRaisesRegex(ModelServiceError, "budget"):
+            self.client.request("retry", MESSAGES, max_tokens=1)
         self.assertEqual(self.post.call_count, 1)

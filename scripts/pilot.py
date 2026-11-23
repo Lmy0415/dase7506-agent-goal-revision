@@ -41,6 +41,10 @@ class AgentOutputError(ValueError):
     pass
 
 
+class BranchBudgetError(AgentOutputError):
+    pass
+
+
 def message(role, content):
     return {"role": role, "content": content}
 
@@ -113,6 +117,12 @@ class Tools:
             self.tokens[app] = app_login(self.world, app)
         return self.tokens[app]
 
+    def is_mutating(self, doc):
+        return doc["method"] != "GET"
+
+    def state_digest(self, app):
+        return self.case.signature(self.world, app)
+
     def run(self, doc, args, sequence):
         app, api = doc["app_name"], doc["api_name"]
         parameters = args.copy()
@@ -122,8 +132,8 @@ class Tools:
                 parameters[name] = self.token(app)
             elif name.endswith("_access_token"):
                 parameters[name] = self.token(name.removesuffix("_access_token"))
-        mutates = doc["method"] != "GET"
-        before = self.case.signature(self.world, app) if mutates else None
+        mutates = self.is_mutating(doc)
+        before = self.state_digest(app) if mutates else None
         effect = self.case.write_effect(self.world, app, api, args) if mutates else None
         try:
             response = self.world.requester._request(app, api, raise_on_failure=False, **parameters)
@@ -134,7 +144,7 @@ class Tools:
             body = {"error": type(error).__name__, "message": "Check the required parameters and types."}
         entry = {"sequence": sequence, "app": app, "tool": api, "args": args, "status": status, "result": body}
         if mutates:
-            after = self.case.signature(self.world, app)
+            after = self.state_digest(app)
             if status == 200 and before != after:
                 outcome = WriteOutcome.COMMITTED
             elif status is not None and 400 <= status < 500 and before == after:
@@ -293,19 +303,21 @@ def make_prefix(case, model, directory):
                 "audit": audit, "old_plan": old, "pending": pending, "checkpoint_reason": reason}
 
 
-def run_branch(case, model, directory, prefix, strategy):
-    label = f"{REVISION}/{case.index}/{strategy}"
+def run_branch(case, model, directory, prefix, strategy, *, tools_type=Tools,
+               revision=REVISION, max_steps=BRANCH_STEPS, keep_service_failures=False):
+    label = f"{revision}/{case.index}/{strategy}"
     saved = directory / f"{strategy}-unscored.json"
     with AppWorld(task_id=case.row["base_task_id"], experiment_name=f"pilot-{uuid4().hex}",
                   load_ground_truth=True) as world:
         if saved.exists():
             restore_snapshot(world, directory, f"{strategy}-final")
-            return score_branch(case, world, prefix, json.loads(saved.read_text()))
+            return score_branch(case, world, prefix, json.loads(saved.read_text()),
+                                keep_failure=keep_service_failures)
         restore_snapshot(world, directory, "checkpoint")
         restored = case.signature(world)
         if restored != prefix["digest"]:
             raise RuntimeError("Simulator checkpoint mismatch")
-        tools = Tools(world, case)
+        tools = tools_type(world, case)
         history = prefix["history"] + [message("user", case.row["intervention_text"])]
         audit = prefix["audit"].copy()
         reason = "branch_step_limit"
@@ -329,23 +341,42 @@ def run_branch(case, model, directory, prefix, strategy):
             if plan is not None:
                 history.append(message("assistant", "Remaining plan: " + json.dumps(plan)))
                 history.append(message("user", EXECUTE))
-            for _ in range(BRANCH_STEPS):
+            for _ in range(max_steps):
                 result = native_step(model, label, history, tools, audit)
                 if result:
                     reason = result
                     break
+        except BranchBudgetError as error:
+            reason = f"branch_budget_limit: {error}"
         except AgentOutputError as error:
             reason = f"invalid_agent_output: {error}"
+        except ModelServiceError as error:
+            if not keep_service_failures:
+                raise
+            failure = {
+                "restored_digest": restored, "termination": f"infrastructure_failure: {error}",
+                "plan": plan, "history": history, "writes_and_reads": audit, "score": None,
+            }
+            write_json(directory / f"{strategy}-attempt-{uuid4().hex}.json", failure)
+            if isinstance(error, TransientModelError):
+                return failure
+            raise
         trial = {"restored_digest": restored, "termination": reason, "plan": plan, "history": history,
                  "writes_and_reads": audit}
         save_snapshot(world, directory, f"{strategy}-final")
         write_json(saved, trial)
-        return score_branch(case, world, prefix, trial)
+        return score_branch(case, world, prefix, trial, keep_failure=keep_service_failures)
 
 
-def score_branch(case, world, prefix, trial):
-    passes, failures = evaluate_revised(world, case.row)
-    completed = world.apis.supervisor.show_active_task()["status"] == "success"
+def score_branch(case, world, prefix, trial, *, keep_failure=False):
+    try:
+        passes, failures = evaluate_revised(world, case.row)
+        completed = world.apis.supervisor.show_active_task()["status"] == "success"
+        retained = case.retained(world)
+    except Exception as error:
+        if not keep_failure:
+            raise
+        return trial | {"score": None, "scoring_error": f"{type(error).__name__}: {error}"}
     events = [
         WriteEvent(r["sequence"], Effect(**r["effect"]), WriteOutcome(r["outcome"]))
         for r in trial["writes_and_reads"] if "outcome" in r
@@ -353,7 +384,7 @@ def score_branch(case, world, prefix, trial):
     verdict = score(
         events, update_after_sequence=len(prefix["audit"]),
         forbidden_effects=case.forbidden(), final_pass=completed and passes > 0 and failures == 0,
-        retained_assertions=case.retained(world), coverage_complete=True,
+        retained_assertions=retained, coverage_complete=True,
     )
     return trial | {"upstream_assertions": {"pass": passes, "fail": failures}, "score": asdict(verdict)}
 

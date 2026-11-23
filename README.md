@@ -84,3 +84,32 @@ records the actual injection boundary for each case. When the API proposes
 multiple calls in one turn, the runner considers the first and records how
 many other calls were proposed. Each branch keeps its final snapshot and raw
 trace even if scoring stops.
+
+## Formal evaluation
+
+The candidate screen uses only the original goal. A case qualifies when the
+model proposes the obsolete write and the runner can pause before executing it.
+The manifest records all exclusion reasons, task families, and the saved prefix
+digests. The post-update budget is 24 model calls including any plan call, with
+a 180,000-input-token ceiling and 512 output tokens per call. All workers share
+one separate $3 campaign ledger across screening and formal execution.
+
+```sh
+export APPWORLD_ROOT="$PWD/.appworld"
+export APPWORLD_CACHE="$APPWORLD_ROOT/cache"
+export IPYTHONDIR="$APPWORLD_ROOT/ipython"
+mkdir -p "$IPYTHONDIR" artifacts/formal-flash
+.venv/bin/python -m scripts.screen_candidates --validate-local
+.venv/bin/python -m scripts.probe_formal_writes
+.venv/bin/python -u -m scripts.screen_candidates --workers 4
+.venv/bin/python -m scripts.screen_candidates --verify-boundaries --workers 4
+.venv/bin/python -m scripts.formal --freeze protocol/formal-v1.json
+.venv/bin/python -u -m scripts.formal --run protocol/formal-v1.json --workers 4
+.venv/bin/python -m scripts.analyze_formal protocol/formal-v1.json --output report/results.md
+```
+
+The screening and formal execution commands require API authorization. Resume
+with the same commands and local artifacts. After freezing, reuse the manifest
+and run command. The formal runner verifies the manifest's implementation,
+dataset, and prefix digests before calling the model. The [paper draft](report/paper_draft.md)
+describes the research question and method.
