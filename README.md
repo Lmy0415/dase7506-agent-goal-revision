@@ -141,3 +141,7 @@ tables and updates `progress.md` and the machine-readable status. Raw traces
 remain under `artifacts/formal-flash/expansion-v1/`. The export adds one row
 per branch, including usage and the local trace index. Elapsed time is
 available for the extension, where it is measured by a monotonic clock.
+
+[Combined table](report/combined_results.md) ·
+[Corrected combined table](report/combined_results_corrected.md) ·
+[Branch metrics and trace index](report/branch_metrics.json).

@@ -1,0 +1,4127 @@
+[
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "6c2c621_2",
+    "intervention_idx": 275,
+    "type": "TargetDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 16386,
+      "output_tokens": 575,
+      "upper_cost_nanos": 5605800
+    },
+    "common_prefix_tool_calls": 6,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 8,
+      "settled_model_calls": 8,
+      "input_tokens": 26245,
+      "output_tokens": 1524,
+      "upper_cost_nanos": 9702300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/275/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/275/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "6c2c621_2",
+    "intervention_idx": 275,
+    "type": "TargetDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 13375,
+      "output_tokens": 308,
+      "upper_cost_nanos": 4382100
+    },
+    "common_prefix_tool_calls": 6,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 8,
+      "settled_model_calls": 8,
+      "input_tokens": 26245,
+      "output_tokens": 1524,
+      "upper_cost_nanos": 9702300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": true,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/275/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/275/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": true,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "6c2c621_2",
+    "intervention_idx": 275,
+    "type": "TargetDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 19730,
+      "output_tokens": 675,
+      "upper_cost_nanos": 6729000
+    },
+    "common_prefix_tool_calls": 6,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 8,
+      "settled_model_calls": 8,
+      "input_tokens": 26245,
+      "output_tokens": 1524,
+      "upper_cost_nanos": 9702300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/275/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/275/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "a3ba388_1",
+    "intervention_idx": 748,
+    "type": "VerbDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 2595,
+      "output_tokens": 47,
+      "upper_cost_nanos": 834900
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 10,
+      "settled_model_calls": 10,
+      "input_tokens": 18405,
+      "output_tokens": 712,
+      "upper_cost_nanos": 6375900
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/748/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/748/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "a3ba388_1",
+    "intervention_idx": 748,
+    "type": "VerbDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 6422,
+      "output_tokens": 113,
+      "upper_cost_nanos": 2062200
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 10,
+      "settled_model_calls": 10,
+      "input_tokens": 18405,
+      "output_tokens": 712,
+      "upper_cost_nanos": 6375900
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/748/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/748/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "a3ba388_1",
+    "intervention_idx": 748,
+    "type": "VerbDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 906,
+      "output_tokens": 33,
+      "upper_cost_nanos": 311400
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 10,
+      "settled_model_calls": 10,
+      "input_tokens": 18405,
+      "output_tokens": 712,
+      "upper_cost_nanos": 6375900
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Include one edit for every old step",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/748/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/748/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "31dc501_1",
+    "intervention_idx": 386,
+    "type": "TargetSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 4314,
+      "output_tokens": 102,
+      "upper_cost_nanos": 1416600
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 4537,
+      "output_tokens": 204,
+      "upper_cost_nanos": 1605900
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/386/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/386/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "31dc501_1",
+    "intervention_idx": 386,
+    "type": "TargetSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 5576,
+      "output_tokens": 112,
+      "upper_cost_nanos": 1807200
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 4537,
+      "output_tokens": 204,
+      "upper_cost_nanos": 1605900
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/386/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/386/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "31dc501_1",
+    "intervention_idx": 386,
+    "type": "TargetSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 1189,
+      "output_tokens": 56,
+      "upper_cost_nanos": 423900
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 4537,
+      "output_tokens": 204,
+      "upper_cost_nanos": 1605900
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Include one edit for every old step",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/386/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/386/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "530b157_2",
+    "intervention_idx": 244,
+    "type": "TargetDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 4464,
+      "output_tokens": 83,
+      "upper_cost_nanos": 1438800
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 20128,
+      "output_tokens": 503,
+      "upper_cost_nanos": 6642000
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/244/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/244/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "530b157_2",
+    "intervention_idx": 244,
+    "type": "TargetDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 7171,
+      "output_tokens": 136,
+      "upper_cost_nanos": 2314500
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 20128,
+      "output_tokens": 503,
+      "upper_cost_nanos": 6642000
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/244/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/244/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "530b157_2",
+    "intervention_idx": 244,
+    "type": "TargetDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 7204,
+      "output_tokens": 101,
+      "upper_cost_nanos": 2282400
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 20128,
+      "output_tokens": 503,
+      "upper_cost_nanos": 6642000
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/244/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/244/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "4d12842_2",
+    "intervention_idx": 308,
+    "type": "VerbSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 27467,
+      "output_tokens": 371,
+      "upper_cost_nanos": 8685300
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 87413,
+      "output_tokens": 1419,
+      "upper_cost_nanos": 27926700
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/308/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/308/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "4d12842_2",
+    "intervention_idx": 308,
+    "type": "VerbSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 39015,
+      "output_tokens": 351,
+      "upper_cost_nanos": 12125700
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 87413,
+      "output_tokens": 1419,
+      "upper_cost_nanos": 27926700
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/308/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/308/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "4d12842_2",
+    "intervention_idx": 308,
+    "type": "VerbSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 39086,
+      "output_tokens": 440,
+      "upper_cost_nanos": 12253800
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 87413,
+      "output_tokens": 1419,
+      "upper_cost_nanos": 27926700
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/308/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/308/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "d6ac34d_1",
+    "intervention_idx": 143,
+    "type": "TargetSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 5342,
+      "output_tokens": 75,
+      "upper_cost_nanos": 1692600
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 5,
+      "settled_model_calls": 5,
+      "input_tokens": 8016,
+      "output_tokens": 505,
+      "upper_cost_nanos": 3010800
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/143/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/143/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "d6ac34d_1",
+    "intervention_idx": 143,
+    "type": "TargetSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 6851,
+      "output_tokens": 85,
+      "upper_cost_nanos": 2157300
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 5,
+      "settled_model_calls": 5,
+      "input_tokens": 8016,
+      "output_tokens": 505,
+      "upper_cost_nanos": 3010800
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/143/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/143/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "d6ac34d_1",
+    "intervention_idx": 143,
+    "type": "TargetSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 6898,
+      "output_tokens": 116,
+      "upper_cost_nanos": 2208600
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 5,
+      "settled_model_calls": 5,
+      "input_tokens": 8016,
+      "output_tokens": 505,
+      "upper_cost_nanos": 3010800
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/143/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/143/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "29a7b7e_1",
+    "intervention_idx": 772,
+    "type": "TargetDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 15377,
+      "output_tokens": 454,
+      "upper_cost_nanos": 5157900
+    },
+    "common_prefix_tool_calls": 15,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 17,
+      "settled_model_calls": 17,
+      "input_tokens": 52926,
+      "output_tokens": 2439,
+      "upper_cost_nanos": 18804600
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/772/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/772/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "29a7b7e_1",
+    "intervention_idx": 772,
+    "type": "TargetDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 18593,
+      "output_tokens": 290,
+      "upper_cost_nanos": 5925900
+    },
+    "common_prefix_tool_calls": 15,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 17,
+      "settled_model_calls": 17,
+      "input_tokens": 52926,
+      "output_tokens": 2439,
+      "upper_cost_nanos": 18804600
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/772/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/772/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "29a7b7e_1",
+    "intervention_idx": 772,
+    "type": "TargetDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 18691,
+      "output_tokens": 297,
+      "upper_cost_nanos": 5963700
+    },
+    "common_prefix_tool_calls": 15,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 17,
+      "settled_model_calls": 17,
+      "input_tokens": 52926,
+      "output_tokens": 2439,
+      "upper_cost_nanos": 18804600
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/772/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/772/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "2d9f728_2",
+    "intervention_idx": 703,
+    "type": "VerbDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 4396,
+      "output_tokens": 159,
+      "upper_cost_nanos": 1509600
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 32667,
+      "output_tokens": 1163,
+      "upper_cost_nanos": 11195700
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/703/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/703/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "2d9f728_2",
+    "intervention_idx": 703,
+    "type": "VerbDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 12513,
+      "output_tokens": 168,
+      "upper_cost_nanos": 3955500
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 32667,
+      "output_tokens": 1163,
+      "upper_cost_nanos": 11195700
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/703/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/703/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "2d9f728_2",
+    "intervention_idx": 703,
+    "type": "VerbDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 7274,
+      "output_tokens": 97,
+      "upper_cost_nanos": 2298600
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 32667,
+      "output_tokens": 1163,
+      "upper_cost_nanos": 11195700
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/703/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/703/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "771d8fc_1",
+    "intervention_idx": 246,
+    "type": "TargetDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 4780,
+      "output_tokens": 48,
+      "upper_cost_nanos": 1491600
+    },
+    "common_prefix_tool_calls": 15,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 17,
+      "settled_model_calls": 17,
+      "input_tokens": 59493,
+      "output_tokens": 1511,
+      "upper_cost_nanos": 19661100
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/246/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/246/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "771d8fc_1",
+    "intervention_idx": 246,
+    "type": "TargetDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 13532,
+      "output_tokens": 180,
+      "upper_cost_nanos": 4275600
+    },
+    "common_prefix_tool_calls": 15,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 17,
+      "settled_model_calls": 17,
+      "input_tokens": 59493,
+      "output_tokens": 1511,
+      "upper_cost_nanos": 19661100
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/246/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/246/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "771d8fc_1",
+    "intervention_idx": 246,
+    "type": "TargetDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 13539,
+      "output_tokens": 170,
+      "upper_cost_nanos": 4265700
+    },
+    "common_prefix_tool_calls": 15,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 17,
+      "settled_model_calls": 17,
+      "input_tokens": 59493,
+      "output_tokens": 1511,
+      "upper_cost_nanos": 19661100
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/246/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/246/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "ccf4b82_1",
+    "intervention_idx": 253,
+    "type": "VerbDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 2635,
+      "output_tokens": 160,
+      "upper_cost_nanos": 982500
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 21001,
+      "output_tokens": 765,
+      "upper_cost_nanos": 7218300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/253/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/253/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "ccf4b82_1",
+    "intervention_idx": 253,
+    "type": "VerbDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 4532,
+      "output_tokens": 77,
+      "upper_cost_nanos": 1452000
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 21001,
+      "output_tokens": 765,
+      "upper_cost_nanos": 7218300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/253/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/253/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "ccf4b82_1",
+    "intervention_idx": 253,
+    "type": "VerbDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 1886,
+      "output_tokens": 33,
+      "upper_cost_nanos": 605400
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 21001,
+      "output_tokens": 765,
+      "upper_cost_nanos": 7218300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Include one edit for every old step",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/253/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/253/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "bcb9696_1",
+    "intervention_idx": 750,
+    "type": "VerbDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 5418,
+      "output_tokens": 104,
+      "upper_cost_nanos": 1750200
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 25221,
+      "output_tokens": 511,
+      "upper_cost_nanos": 8179500
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 2,
+      "retained_total": 2,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/750/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/750/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 2,
+      "retained_total": 2,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "bcb9696_1",
+    "intervention_idx": 750,
+    "type": "VerbDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 9155,
+      "output_tokens": 83,
+      "upper_cost_nanos": 2846100
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 25221,
+      "output_tokens": 511,
+      "upper_cost_nanos": 8179500
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 2,
+      "retained_total": 2,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/750/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/750/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 2,
+      "retained_total": 2,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "bcb9696_1",
+    "intervention_idx": 750,
+    "type": "VerbDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 9198,
+      "output_tokens": 109,
+      "upper_cost_nanos": 2890200
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 25221,
+      "output_tokens": 511,
+      "upper_cost_nanos": 8179500
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 2,
+      "retained_total": 2,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/750/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/750/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": true,
+      "retained_satisfied": 2,
+      "retained_total": 2,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "024c982_1",
+    "intervention_idx": 298,
+    "type": "VerbSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 4312,
+      "output_tokens": 133,
+      "upper_cost_nanos": 1453200
+    },
+    "common_prefix_tool_calls": 1,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 3734,
+      "output_tokens": 204,
+      "upper_cost_nanos": 1365000
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/298/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/298/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "024c982_1",
+    "intervention_idx": 298,
+    "type": "VerbSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 5114,
+      "output_tokens": 175,
+      "upper_cost_nanos": 1744200
+    },
+    "common_prefix_tool_calls": 1,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 3734,
+      "output_tokens": 204,
+      "upper_cost_nanos": 1365000
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/298/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/298/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "024c982_1",
+    "intervention_idx": 298,
+    "type": "VerbSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 5181,
+      "output_tokens": 217,
+      "upper_cost_nanos": 1814700
+    },
+    "common_prefix_tool_calls": 1,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 3734,
+      "output_tokens": 204,
+      "upper_cost_nanos": 1365000
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/298/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/298/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "270f1ff_1",
+    "intervention_idx": 251,
+    "type": "VerbDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 5797,
+      "output_tokens": 58,
+      "upper_cost_nanos": 1808700
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 22298,
+      "output_tokens": 690,
+      "upper_cost_nanos": 7517400
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/251/A.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/251/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "270f1ff_1",
+    "intervention_idx": 251,
+    "type": "VerbDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 10101,
+      "output_tokens": 117,
+      "upper_cost_nanos": 3170700
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 22298,
+      "output_tokens": 690,
+      "upper_cost_nanos": 7517400
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/251/B.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/251/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-v1",
+    "base_task_id": "270f1ff_1",
+    "intervention_idx": 251,
+    "type": "VerbDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": null,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 10145,
+      "output_tokens": 94,
+      "upper_cost_nanos": 3156300
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": null,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 22298,
+      "output_tokens": 690,
+      "upper_cost_nanos": 7517400
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/formal-v1-0cfdc5aafea8/251/C.json",
+    "common_prefix_path": "artifacts/formal-flash/screen-v1/251/prefix.json",
+    "score_after_case_748_correction": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    }
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "f99d726_3",
+    "intervention_idx": 337,
+    "type": "VerbSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 5.23,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 14772,
+      "output_tokens": 177,
+      "upper_cost_nanos": 4644000
+    },
+    "common_prefix_tool_calls": 4,
+    "common_prefix_elapsed_s": 6.602,
+    "common_prefix_usage": {
+      "attempts": 6,
+      "settled_model_calls": 6,
+      "input_tokens": 28372,
+      "output_tokens": 452,
+      "upper_cost_nanos": 9054000
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/337/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/337/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "f99d726_3",
+    "intervention_idx": 337,
+    "type": "VerbSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 6.188,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 19544,
+      "output_tokens": 306,
+      "upper_cost_nanos": 6230400
+    },
+    "common_prefix_tool_calls": 4,
+    "common_prefix_elapsed_s": 6.602,
+    "common_prefix_usage": {
+      "attempts": 6,
+      "settled_model_calls": 6,
+      "input_tokens": 28372,
+      "output_tokens": 452,
+      "upper_cost_nanos": 9054000
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/337/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/337/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "f99d726_3",
+    "intervention_idx": 337,
+    "type": "VerbSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 3.352,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 4676,
+      "output_tokens": 74,
+      "upper_cost_nanos": 1491600
+    },
+    "common_prefix_tool_calls": 4,
+    "common_prefix_elapsed_s": 6.602,
+    "common_prefix_usage": {
+      "attempts": 6,
+      "settled_model_calls": 6,
+      "input_tokens": 28372,
+      "output_tokens": 452,
+      "upper_cost_nanos": 9054000
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Include one edit for every old step",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/337/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/337/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "9bf2c8a_2",
+    "intervention_idx": 313,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 4.164,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 7357,
+      "output_tokens": 358,
+      "upper_cost_nanos": 2636700
+    },
+    "common_prefix_tool_calls": 1,
+    "common_prefix_elapsed_s": 4.011,
+    "common_prefix_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 6158,
+      "output_tokens": 309,
+      "upper_cost_nanos": 2218200
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/313/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/313/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "9bf2c8a_2",
+    "intervention_idx": 313,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 6.904,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 8603,
+      "output_tokens": 323,
+      "upper_cost_nanos": 2968500
+    },
+    "common_prefix_tool_calls": 1,
+    "common_prefix_elapsed_s": 4.011,
+    "common_prefix_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 6158,
+      "output_tokens": 309,
+      "upper_cost_nanos": 2218200
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/313/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/313/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "9bf2c8a_2",
+    "intervention_idx": 313,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 7.233,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 8593,
+      "output_tokens": 331,
+      "upper_cost_nanos": 2975100
+    },
+    "common_prefix_tool_calls": 1,
+    "common_prefix_elapsed_s": 4.011,
+    "common_prefix_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 6158,
+      "output_tokens": 309,
+      "upper_cost_nanos": 2218200
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/313/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/313/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "dcb2559_2",
+    "intervention_idx": 327,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 4.725,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 4400,
+      "output_tokens": 203,
+      "upper_cost_nanos": 1563600
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": 5.298,
+    "common_prefix_usage": {
+      "attempts": 5,
+      "settled_model_calls": 5,
+      "input_tokens": 6678,
+      "output_tokens": 281,
+      "upper_cost_nanos": 2340600
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/327/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/327/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "dcb2559_2",
+    "intervention_idx": 327,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 5.763,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 5446,
+      "output_tokens": 286,
+      "upper_cost_nanos": 1977000
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": 5.298,
+    "common_prefix_usage": {
+      "attempts": 5,
+      "settled_model_calls": 5,
+      "input_tokens": 6678,
+      "output_tokens": 281,
+      "upper_cost_nanos": 2340600
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/327/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/327/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "dcb2559_2",
+    "intervention_idx": 327,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 5.265,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 5531,
+      "output_tokens": 260,
+      "upper_cost_nanos": 1971300
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": 5.298,
+    "common_prefix_usage": {
+      "attempts": 5,
+      "settled_model_calls": 5,
+      "input_tokens": 6678,
+      "output_tokens": 281,
+      "upper_cost_nanos": 2340600
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/327/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/327/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "ff58e36_1",
+    "intervention_idx": 834,
+    "type": "TargetDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": 6.16,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 16042,
+      "output_tokens": 225,
+      "upper_cost_nanos": 5082600
+    },
+    "common_prefix_tool_calls": 18,
+    "common_prefix_elapsed_s": 24.812,
+    "common_prefix_usage": {
+      "attempts": 20,
+      "settled_model_calls": 20,
+      "input_tokens": 99686,
+      "output_tokens": 1619,
+      "upper_cost_nanos": 31848600
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/834/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/834/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "ff58e36_1",
+    "intervention_idx": 834,
+    "type": "TargetDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": 7.602,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 21277,
+      "output_tokens": 238,
+      "upper_cost_nanos": 6668700
+    },
+    "common_prefix_tool_calls": 18,
+    "common_prefix_elapsed_s": 24.812,
+    "common_prefix_usage": {
+      "attempts": 20,
+      "settled_model_calls": 20,
+      "input_tokens": 99686,
+      "output_tokens": 1619,
+      "upper_cost_nanos": 31848600
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/834/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/834/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "ff58e36_1",
+    "intervention_idx": 834,
+    "type": "TargetDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": 13.256,
+    "post_update_tool_calls": 7,
+    "post_update_usage": {
+      "attempts": 8,
+      "settled_model_calls": 8,
+      "input_tokens": 66147,
+      "output_tokens": 452,
+      "upper_cost_nanos": 20386500
+    },
+    "common_prefix_tool_calls": 18,
+    "common_prefix_elapsed_s": 24.812,
+    "common_prefix_usage": {
+      "attempts": 20,
+      "settled_model_calls": 20,
+      "input_tokens": 99686,
+      "output_tokens": 1619,
+      "upper_cost_nanos": 31848600
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/834/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/834/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "22cc237_1",
+    "intervention_idx": 267,
+    "type": "TargetDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": 5.822,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 7251,
+      "output_tokens": 217,
+      "upper_cost_nanos": 2435700
+    },
+    "common_prefix_tool_calls": 8,
+    "common_prefix_elapsed_s": 12.906,
+    "common_prefix_usage": {
+      "attempts": 10,
+      "settled_model_calls": 10,
+      "input_tokens": 43784,
+      "output_tokens": 1134,
+      "upper_cost_nanos": 14496000
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/267/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/267/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "22cc237_1",
+    "intervention_idx": 267,
+    "type": "TargetDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": 7.667,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 20118,
+      "output_tokens": 406,
+      "upper_cost_nanos": 6522600
+    },
+    "common_prefix_tool_calls": 8,
+    "common_prefix_elapsed_s": 12.906,
+    "common_prefix_usage": {
+      "attempts": 10,
+      "settled_model_calls": 10,
+      "input_tokens": 43784,
+      "output_tokens": 1134,
+      "upper_cost_nanos": 14496000
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": true,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/267/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/267/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "22cc237_1",
+    "intervention_idx": 267,
+    "type": "TargetDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": 11.205,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 1,
+      "input_tokens": 5277,
+      "output_tokens": 86,
+      "upper_cost_nanos": 8969400
+    },
+    "common_prefix_tool_calls": 8,
+    "common_prefix_elapsed_s": 12.906,
+    "common_prefix_usage": {
+      "attempts": 10,
+      "settled_model_calls": 10,
+      "input_tokens": 43784,
+      "output_tokens": 1134,
+      "upper_cost_nanos": 14496000
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Include one edit for every old step",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/267/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/267/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "f099b4c_1",
+    "intervention_idx": 351,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 7.187,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 16562,
+      "output_tokens": 627,
+      "upper_cost_nanos": 5721000
+    },
+    "common_prefix_tool_calls": 7,
+    "common_prefix_elapsed_s": 12.15,
+    "common_prefix_usage": {
+      "attempts": 9,
+      "settled_model_calls": 9,
+      "input_tokens": 38694,
+      "output_tokens": 1065,
+      "upper_cost_nanos": 12886200
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/351/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/351/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "f099b4c_1",
+    "intervention_idx": 351,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 6.303,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 22405,
+      "output_tokens": 536,
+      "upper_cost_nanos": 7364700
+    },
+    "common_prefix_tool_calls": 7,
+    "common_prefix_elapsed_s": 12.15,
+    "common_prefix_usage": {
+      "attempts": 9,
+      "settled_model_calls": 9,
+      "input_tokens": 38694,
+      "output_tokens": 1065,
+      "upper_cost_nanos": 12886200
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/351/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/351/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "f099b4c_1",
+    "intervention_idx": 351,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 6.945,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 22483,
+      "output_tokens": 571,
+      "upper_cost_nanos": 7430100
+    },
+    "common_prefix_tool_calls": 7,
+    "common_prefix_elapsed_s": 12.15,
+    "common_prefix_usage": {
+      "attempts": 9,
+      "settled_model_calls": 9,
+      "input_tokens": 38694,
+      "output_tokens": 1065,
+      "upper_cost_nanos": 12886200
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/351/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/351/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "ffe6d5e_3",
+    "intervention_idx": 356,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 5.675,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 7425,
+      "output_tokens": 132,
+      "upper_cost_nanos": 2385900
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": 4.768,
+    "common_prefix_usage": {
+      "attempts": 5,
+      "settled_model_calls": 5,
+      "input_tokens": 10821,
+      "output_tokens": 260,
+      "upper_cost_nanos": 3558300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/356/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/356/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "ffe6d5e_3",
+    "intervention_idx": 356,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 7.179,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 9746,
+      "output_tokens": 116,
+      "upper_cost_nanos": 3063000
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": 4.768,
+    "common_prefix_usage": {
+      "attempts": 5,
+      "settled_model_calls": 5,
+      "input_tokens": 10821,
+      "output_tokens": 260,
+      "upper_cost_nanos": 3558300
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/356/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/356/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "ffe6d5e_3",
+    "intervention_idx": 356,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 8.681,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 9831,
+      "output_tokens": 147,
+      "upper_cost_nanos": 3125700
+    },
+    "common_prefix_tool_calls": 3,
+    "common_prefix_elapsed_s": 4.768,
+    "common_prefix_usage": {
+      "attempts": 5,
+      "settled_model_calls": 5,
+      "input_tokens": 10821,
+      "output_tokens": 260,
+      "upper_cost_nanos": 3558300
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/356/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/356/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "7264edc_1",
+    "intervention_idx": 335,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 9.592,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 18449,
+      "output_tokens": 416,
+      "upper_cost_nanos": 6033900
+    },
+    "common_prefix_tool_calls": 8,
+    "common_prefix_elapsed_s": 12.352,
+    "common_prefix_usage": {
+      "attempts": 10,
+      "settled_model_calls": 10,
+      "input_tokens": 60230,
+      "output_tokens": 939,
+      "upper_cost_nanos": 19195800
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/335/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/335/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "7264edc_1",
+    "intervention_idx": 335,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 13.361,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 34223,
+      "output_tokens": 518,
+      "upper_cost_nanos": 10888500
+    },
+    "common_prefix_tool_calls": 8,
+    "common_prefix_elapsed_s": 12.352,
+    "common_prefix_usage": {
+      "attempts": 10,
+      "settled_model_calls": 10,
+      "input_tokens": 60230,
+      "output_tokens": 939,
+      "upper_cost_nanos": 19195800
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/335/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/335/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "7264edc_1",
+    "intervention_idx": 335,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 5.892,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 5435,
+      "output_tokens": 79,
+      "upper_cost_nanos": 1725300
+    },
+    "common_prefix_tool_calls": 8,
+    "common_prefix_elapsed_s": 12.352,
+    "common_prefix_usage": {
+      "attempts": 10,
+      "settled_model_calls": 10,
+      "input_tokens": 60230,
+      "output_tokens": 939,
+      "upper_cost_nanos": 19195800
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Include one edit for every old step",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/335/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/335/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "59bcfc8_1",
+    "intervention_idx": 359,
+    "type": "VerbSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 6.42,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 24282,
+      "output_tokens": 181,
+      "upper_cost_nanos": 7501800
+    },
+    "common_prefix_tool_calls": 13,
+    "common_prefix_elapsed_s": 20.206,
+    "common_prefix_usage": {
+      "attempts": 15,
+      "settled_model_calls": 15,
+      "input_tokens": 109984,
+      "output_tokens": 1591,
+      "upper_cost_nanos": 34904400
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/359/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/359/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "59bcfc8_1",
+    "intervention_idx": 359,
+    "type": "VerbSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 5.657,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 34227,
+      "output_tokens": 119,
+      "upper_cost_nanos": 10410900
+    },
+    "common_prefix_tool_calls": 13,
+    "common_prefix_elapsed_s": 20.206,
+    "common_prefix_usage": {
+      "attempts": 15,
+      "settled_model_calls": 15,
+      "input_tokens": 109984,
+      "output_tokens": 1591,
+      "upper_cost_nanos": 34904400
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/359/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/359/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "59bcfc8_1",
+    "intervention_idx": 359,
+    "type": "VerbSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 7.041,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 34320,
+      "output_tokens": 210,
+      "upper_cost_nanos": 10548000
+    },
+    "common_prefix_tool_calls": 13,
+    "common_prefix_elapsed_s": 20.206,
+    "common_prefix_usage": {
+      "attempts": 15,
+      "settled_model_calls": 15,
+      "input_tokens": 109984,
+      "output_tokens": 1591,
+      "upper_cost_nanos": 34904400
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/359/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/359/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "32616b5_1",
+    "intervention_idx": 43,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 4.475,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 5910,
+      "output_tokens": 512,
+      "upper_cost_nanos": 2387400
+    },
+    "common_prefix_tool_calls": 7,
+    "common_prefix_elapsed_s": 10.699,
+    "common_prefix_usage": {
+      "attempts": 9,
+      "settled_model_calls": 9,
+      "input_tokens": 26627,
+      "output_tokens": 821,
+      "upper_cost_nanos": 8973300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Tool parameters must be a JSON object",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/43/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/43/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "32616b5_1",
+    "intervention_idx": 43,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 4.815,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 9945,
+      "output_tokens": 542,
+      "upper_cost_nanos": 3633900
+    },
+    "common_prefix_tool_calls": 7,
+    "common_prefix_elapsed_s": 10.699,
+    "common_prefix_usage": {
+      "attempts": 9,
+      "settled_model_calls": 9,
+      "input_tokens": 26627,
+      "output_tokens": 821,
+      "upper_cost_nanos": 8973300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Tool parameters must be a JSON object",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/43/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/43/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "32616b5_1",
+    "intervention_idx": 43,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 6.012,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 9999,
+      "output_tokens": 570,
+      "upper_cost_nanos": 3683700
+    },
+    "common_prefix_tool_calls": 7,
+    "common_prefix_elapsed_s": 10.699,
+    "common_prefix_usage": {
+      "attempts": 9,
+      "settled_model_calls": 9,
+      "input_tokens": 26627,
+      "output_tokens": 821,
+      "upper_cost_nanos": 8973300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Tool parameters must be a JSON object",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/43/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/43/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "cf6abd2_1",
+    "intervention_idx": 28,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 4.528,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 7292,
+      "output_tokens": 153,
+      "upper_cost_nanos": 2371200
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": 7.664,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 5454,
+      "output_tokens": 330,
+      "upper_cost_nanos": 2032200
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/28/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/28/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "cf6abd2_1",
+    "intervention_idx": 28,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 3.532,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 5815,
+      "output_tokens": 102,
+      "upper_cost_nanos": 1866900
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": 7.664,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 5454,
+      "output_tokens": 330,
+      "upper_cost_nanos": 2032200
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/28/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/28/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "cf6abd2_1",
+    "intervention_idx": 28,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 5.191,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 5898,
+      "output_tokens": 149,
+      "upper_cost_nanos": 1948200
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": 7.664,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 5454,
+      "output_tokens": 330,
+      "upper_cost_nanos": 2032200
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/28/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/28/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "5e27cd7_3",
+    "intervention_idx": 312,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 6.381,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 25279,
+      "output_tokens": 259,
+      "upper_cost_nanos": 7894500
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": 12.976,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 68678,
+      "output_tokens": 1045,
+      "upper_cost_nanos": 21857400
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/312/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/312/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "5e27cd7_3",
+    "intervention_idx": 312,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 7.106,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 36514,
+      "output_tokens": 265,
+      "upper_cost_nanos": 11272200
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": 12.976,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 68678,
+      "output_tokens": 1045,
+      "upper_cost_nanos": 21857400
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/312/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/312/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "5e27cd7_3",
+    "intervention_idx": 312,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 8.186,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 36570,
+      "output_tokens": 247,
+      "upper_cost_nanos": 11267400
+    },
+    "common_prefix_tool_calls": 9,
+    "common_prefix_elapsed_s": 12.976,
+    "common_prefix_usage": {
+      "attempts": 11,
+      "settled_model_calls": 11,
+      "input_tokens": 68678,
+      "output_tokens": 1045,
+      "upper_cost_nanos": 21857400
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/312/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/312/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "29caf6f_2",
+    "intervention_idx": 269,
+    "type": "TargetDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": 5.24,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 8040,
+      "output_tokens": 85,
+      "upper_cost_nanos": 2514000
+    },
+    "common_prefix_tool_calls": 4,
+    "common_prefix_elapsed_s": 5.972,
+    "common_prefix_usage": {
+      "attempts": 6,
+      "settled_model_calls": 6,
+      "input_tokens": 14009,
+      "output_tokens": 415,
+      "upper_cost_nanos": 4700700
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/269/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/269/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "29caf6f_2",
+    "intervention_idx": 269,
+    "type": "TargetDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": 5.485,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 10821,
+      "output_tokens": 114,
+      "upper_cost_nanos": 3383100
+    },
+    "common_prefix_tool_calls": 4,
+    "common_prefix_elapsed_s": 5.972,
+    "common_prefix_usage": {
+      "attempts": 6,
+      "settled_model_calls": 6,
+      "input_tokens": 14009,
+      "output_tokens": 415,
+      "upper_cost_nanos": 4700700
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/269/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/269/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "29caf6f_2",
+    "intervention_idx": 269,
+    "type": "TargetDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": 6.692,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 10907,
+      "output_tokens": 163,
+      "upper_cost_nanos": 3467700
+    },
+    "common_prefix_tool_calls": 4,
+    "common_prefix_elapsed_s": 5.972,
+    "common_prefix_usage": {
+      "attempts": 6,
+      "settled_model_calls": 6,
+      "input_tokens": 14009,
+      "output_tokens": 415,
+      "upper_cost_nanos": 4700700
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/269/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/269/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "69ba40f_1",
+    "intervention_idx": 333,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 9.247,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 17563,
+      "output_tokens": 615,
+      "upper_cost_nanos": 6006900
+    },
+    "common_prefix_tool_calls": 10,
+    "common_prefix_elapsed_s": 15.28,
+    "common_prefix_usage": {
+      "attempts": 12,
+      "settled_model_calls": 12,
+      "input_tokens": 75916,
+      "output_tokens": 1477,
+      "upper_cost_nanos": 24547200
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/333/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/333/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "69ba40f_1",
+    "intervention_idx": 333,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 8.816,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 22403,
+      "output_tokens": 454,
+      "upper_cost_nanos": 7265700
+    },
+    "common_prefix_tool_calls": 10,
+    "common_prefix_elapsed_s": 15.28,
+    "common_prefix_usage": {
+      "attempts": 12,
+      "settled_model_calls": 12,
+      "input_tokens": 75916,
+      "output_tokens": 1477,
+      "upper_cost_nanos": 24547200
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/333/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/333/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "69ba40f_1",
+    "intervention_idx": 333,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 16.082,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 22504,
+      "output_tokens": 669,
+      "upper_cost_nanos": 7554000
+    },
+    "common_prefix_tool_calls": 10,
+    "common_prefix_elapsed_s": 15.28,
+    "common_prefix_usage": {
+      "attempts": 12,
+      "settled_model_calls": 12,
+      "input_tokens": 75916,
+      "output_tokens": 1477,
+      "upper_cost_nanos": 24547200
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/333/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/333/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "60d0b5b_3",
+    "intervention_idx": 2,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 9.877,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 11313,
+      "output_tokens": 193,
+      "upper_cost_nanos": 3625500
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": 8.561,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 7561,
+      "output_tokens": 297,
+      "upper_cost_nanos": 2624700
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/2/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/2/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "60d0b5b_3",
+    "intervention_idx": 2,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 7.101,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 12915,
+      "output_tokens": 229,
+      "upper_cost_nanos": 4149300
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": 8.561,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 7561,
+      "output_tokens": 297,
+      "upper_cost_nanos": 2624700
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/2/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/2/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "60d0b5b_3",
+    "intervention_idx": 2,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 6.481,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 13020,
+      "output_tokens": 270,
+      "upper_cost_nanos": 4230000
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": 8.561,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 7561,
+      "output_tokens": 297,
+      "upper_cost_nanos": 2624700
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/2/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/2/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "0de03ea_1",
+    "intervention_idx": 296,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 3.342,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 11540,
+      "output_tokens": 115,
+      "upper_cost_nanos": 3600000
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": 9.61,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 24801,
+      "output_tokens": 659,
+      "upper_cost_nanos": 8231100
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/296/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/296/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "0de03ea_1",
+    "intervention_idx": 296,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 5.041,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 14713,
+      "output_tokens": 284,
+      "upper_cost_nanos": 4754700
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": 9.61,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 24801,
+      "output_tokens": 659,
+      "upper_cost_nanos": 8231100
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/296/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/296/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "0de03ea_1",
+    "intervention_idx": 296,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 2.751,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 3113,
+      "output_tokens": 66,
+      "upper_cost_nanos": 1013100
+    },
+    "common_prefix_tool_calls": 5,
+    "common_prefix_elapsed_s": 9.61,
+    "common_prefix_usage": {
+      "attempts": 7,
+      "settled_model_calls": 7,
+      "input_tokens": 24801,
+      "output_tokens": 659,
+      "upper_cost_nanos": 8231100
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Include one edit for every old step",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/296/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/296/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "ec437da_3",
+    "intervention_idx": 336,
+    "type": "BothSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 7.079,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 22553,
+      "output_tokens": 466,
+      "upper_cost_nanos": 7325100
+    },
+    "common_prefix_tool_calls": 12,
+    "common_prefix_elapsed_s": 20.373,
+    "common_prefix_usage": {
+      "attempts": 14,
+      "settled_model_calls": 14,
+      "input_tokens": 67930,
+      "output_tokens": 1498,
+      "upper_cost_nanos": 22176600
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/336/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/336/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "ec437da_3",
+    "intervention_idx": 336,
+    "type": "BothSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 7.548,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 20420,
+      "output_tokens": 499,
+      "upper_cost_nanos": 6724800
+    },
+    "common_prefix_tool_calls": 12,
+    "common_prefix_elapsed_s": 20.373,
+    "common_prefix_usage": {
+      "attempts": 14,
+      "settled_model_calls": 14,
+      "input_tokens": 67930,
+      "output_tokens": 1498,
+      "upper_cost_nanos": 22176600
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/336/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/336/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "ec437da_3",
+    "intervention_idx": 336,
+    "type": "BothSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 4.384,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 5237,
+      "output_tokens": 65,
+      "upper_cost_nanos": 1649100
+    },
+    "common_prefix_tool_calls": 12,
+    "common_prefix_elapsed_s": 20.373,
+    "common_prefix_usage": {
+      "attempts": 14,
+      "settled_model_calls": 14,
+      "input_tokens": 67930,
+      "output_tokens": 1498,
+      "upper_cost_nanos": 22176600
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Include one edit for every old step",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/336/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/336/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "92fe421_1",
+    "intervention_idx": 841,
+    "type": "TargetDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": 4.161,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 4041,
+      "output_tokens": 89,
+      "upper_cost_nanos": 1319100
+    },
+    "common_prefix_tool_calls": 4,
+    "common_prefix_elapsed_s": 10.879,
+    "common_prefix_usage": {
+      "attempts": 6,
+      "settled_model_calls": 6,
+      "input_tokens": 14902,
+      "output_tokens": 641,
+      "upper_cost_nanos": 5239800
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/841/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/841/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "92fe421_1",
+    "intervention_idx": 841,
+    "type": "TargetDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": 9.167,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 6489,
+      "output_tokens": 150,
+      "upper_cost_nanos": 2126700
+    },
+    "common_prefix_tool_calls": 4,
+    "common_prefix_elapsed_s": 10.879,
+    "common_prefix_usage": {
+      "attempts": 6,
+      "settled_model_calls": 6,
+      "input_tokens": 14902,
+      "output_tokens": 641,
+      "upper_cost_nanos": 5239800
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/841/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/841/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "92fe421_1",
+    "intervention_idx": 841,
+    "type": "TargetDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": 3.088,
+    "post_update_tool_calls": 0,
+    "post_update_usage": {
+      "attempts": 1,
+      "settled_model_calls": 1,
+      "input_tokens": 2392,
+      "output_tokens": 83,
+      "upper_cost_nanos": 817200
+    },
+    "common_prefix_tool_calls": 4,
+    "common_prefix_elapsed_s": 10.879,
+    "common_prefix_usage": {
+      "attempts": 6,
+      "settled_model_calls": 6,
+      "input_tokens": 14902,
+      "output_tokens": 641,
+      "upper_cost_nanos": 5239800
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "invalid_agent_output: Include one edit for every old step",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/841/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/841/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "6474048_2",
+    "intervention_idx": 294,
+    "type": "VerbSwap",
+    "strategy": "A",
+    "post_update_elapsed_s": 6.459,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 7272,
+      "output_tokens": 181,
+      "upper_cost_nanos": 2398800
+    },
+    "common_prefix_tool_calls": 6,
+    "common_prefix_elapsed_s": 12.392,
+    "common_prefix_usage": {
+      "attempts": 8,
+      "settled_model_calls": 8,
+      "input_tokens": 19033,
+      "output_tokens": 791,
+      "upper_cost_nanos": 6659100
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/294/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/294/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "6474048_2",
+    "intervention_idx": 294,
+    "type": "VerbSwap",
+    "strategy": "B",
+    "post_update_elapsed_s": 5.131,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 9312,
+      "output_tokens": 131,
+      "upper_cost_nanos": 2950800
+    },
+    "common_prefix_tool_calls": 6,
+    "common_prefix_elapsed_s": 12.392,
+    "common_prefix_usage": {
+      "attempts": 8,
+      "settled_model_calls": 8,
+      "input_tokens": 19033,
+      "output_tokens": 791,
+      "upper_cost_nanos": 6659100
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/294/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/294/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "6474048_2",
+    "intervention_idx": 294,
+    "type": "VerbSwap",
+    "strategy": "C",
+    "post_update_elapsed_s": 6.226,
+    "post_update_tool_calls": 2,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 9390,
+      "output_tokens": 154,
+      "upper_cost_nanos": 3001800
+    },
+    "common_prefix_tool_calls": 6,
+    "common_prefix_elapsed_s": 12.392,
+    "common_prefix_usage": {
+      "attempts": 8,
+      "settled_model_calls": 8,
+      "input_tokens": 19033,
+      "output_tokens": 791,
+      "upper_cost_nanos": 6659100
+    },
+    "score": {
+      "final_pass": true,
+      "retained_satisfied": 0,
+      "retained_total": 0,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": true
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/294/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/294/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "9dabbc9_1",
+    "intervention_idx": 763,
+    "type": "VerbDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": 7.938,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 2,
+      "settled_model_calls": 2,
+      "input_tokens": 7320,
+      "output_tokens": 170,
+      "upper_cost_nanos": 2400000
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": 6.003,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 8529,
+      "output_tokens": 313,
+      "upper_cost_nanos": 2934300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/763/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/763/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "9dabbc9_1",
+    "intervention_idx": 763,
+    "type": "VerbDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": 7.029,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 9184,
+      "output_tokens": 182,
+      "upper_cost_nanos": 2973600
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": 6.003,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 8529,
+      "output_tokens": 313,
+      "upper_cost_nanos": 2934300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/763/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/763/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "9dabbc9_1",
+    "intervention_idx": 763,
+    "type": "VerbDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": 6.431,
+    "post_update_tool_calls": 1,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 9283,
+      "output_tokens": 239,
+      "upper_cost_nanos": 3071700
+    },
+    "common_prefix_tool_calls": 2,
+    "common_prefix_elapsed_s": 6.003,
+    "common_prefix_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 8529,
+      "output_tokens": 313,
+      "upper_cost_nanos": 2934300
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "no_tool",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/763/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/763/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "986aa4e_2",
+    "intervention_idx": 842,
+    "type": "TargetDrop",
+    "strategy": "A",
+    "post_update_elapsed_s": 7.693,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 3,
+      "settled_model_calls": 3,
+      "input_tokens": 31525,
+      "output_tokens": 178,
+      "upper_cost_nanos": 9671100
+    },
+    "common_prefix_tool_calls": 7,
+    "common_prefix_elapsed_s": 10.31,
+    "common_prefix_usage": {
+      "attempts": 9,
+      "settled_model_calls": 9,
+      "input_tokens": 60291,
+      "output_tokens": 929,
+      "upper_cost_nanos": 19202100
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/842/A.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/842/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "986aa4e_2",
+    "intervention_idx": 842,
+    "type": "TargetDrop",
+    "strategy": "B",
+    "post_update_elapsed_s": 8.777,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 38112,
+      "output_tokens": 185,
+      "upper_cost_nanos": 11655600
+    },
+    "common_prefix_tool_calls": 7,
+    "common_prefix_elapsed_s": 10.31,
+    "common_prefix_usage": {
+      "attempts": 9,
+      "settled_model_calls": 9,
+      "input_tokens": 60291,
+      "output_tokens": 929,
+      "upper_cost_nanos": 19202100
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/842/B.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/842/screen.json"
+  },
+  {
+    "policy_version": "formal-expansion-v1",
+    "base_task_id": "986aa4e_2",
+    "intervention_idx": 842,
+    "type": "TargetDrop",
+    "strategy": "C",
+    "post_update_elapsed_s": 6.388,
+    "post_update_tool_calls": 3,
+    "post_update_usage": {
+      "attempts": 4,
+      "settled_model_calls": 4,
+      "input_tokens": 38241,
+      "output_tokens": 234,
+      "upper_cost_nanos": 11753100
+    },
+    "common_prefix_tool_calls": 7,
+    "common_prefix_elapsed_s": 10.31,
+    "common_prefix_usage": {
+      "attempts": 9,
+      "settled_model_calls": 9,
+      "input_tokens": 60291,
+      "output_tokens": 929,
+      "upper_cost_nanos": 19202100
+    },
+    "score": {
+      "final_pass": false,
+      "retained_satisfied": 1,
+      "retained_total": 1,
+      "retained_unknown": 0,
+      "violation": false,
+      "rejected_forbidden_requests": 0,
+      "strict_pass": false
+    },
+    "termination": "done",
+    "trace_path": "artifacts/formal-flash/expansion-v1/cases/842/C.json",
+    "common_prefix_path": "artifacts/formal-flash/expansion-v1/cases/842/screen.json"
+  }
+]
