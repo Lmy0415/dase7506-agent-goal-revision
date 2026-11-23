@@ -115,3 +115,29 @@ and run command. The formal runner verifies the manifest's implementation,
 dataset, and prefix digests before calling the model. The [paper draft](report/paper_draft.md)
 describes the research question, method, and results. The [frozen table](report/results.md)
 and [offline sensitivity table](report/results_corrected.md) are separately reproducible.
+
+## Held-out extension
+
+The extension keeps the first batch's frozen files intact and adds one candidate
+per unused AppWorld task family. It uses the same A/B/C continuation budgets, a
+separate freeze manifest, and the existing cumulative $3 ledger. After local
+preflight, candidates are screened in small waves. The script freezes when
+the first and second batches contain at least 30 verified cases, or when the
+candidate pool or authorized screening budget is exhausted.
+
+```sh
+export APPWORLD_ROOT="$PWD/.appworld"
+export APPWORLD_CACHE="$APPWORLD_ROOT/cache"
+export IPYTHONDIR="$APPWORLD_ROOT/ipython"
+mkdir -p "$IPYTHONDIR"
+.venv/bin/python -u -m scripts.expand --workers 5
+.venv/bin/python -m scripts.export_metrics
+```
+
+Use the same extension command to resume. The script retains old-goal
+checkpoints, verifies pending writes in copies of those checkpoints, and
+skips already recorded branches. It rebuilds the extension and combined
+tables and updates `progress.md` and the machine-readable status. Raw traces
+remain under `artifacts/formal-flash/expansion-v1/`. The export adds one row
+per branch, including usage and the local trace index. Elapsed time is
+available for the extension, where it is measured by a monotonic clock.

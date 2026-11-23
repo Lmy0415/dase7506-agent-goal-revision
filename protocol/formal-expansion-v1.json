@@ -1,0 +1,431 @@
+{
+  "protocol": {
+    "revision": "formal-expansion-v1",
+    "seed": 7507,
+    "model": "deepseek-flash",
+    "thinking": "disabled",
+    "temperature": 0,
+    "prefix_model_calls": 20,
+    "post_update_model_calls": 24,
+    "post_update_input_tokens": 180000,
+    "output_tokens_per_call": 512,
+    "post_update_output_tokens": 12288,
+    "transient_retries_per_call": 2,
+    "format_retries": 0,
+    "campaign_cap_usd": 3.0,
+    "minimum_combined_cases": 30
+  },
+  "base_manifest_sha256": "0cfdc5aafea818ee9c5ac599a3dd1f7959c643d44cfdd126ea664bc1c2d0a5c1",
+  "implementation": {
+    "expansion_cases.py": "e2de5a795abfbc19da47511421697e31a0859974cf4045086666d07df4b9ad69",
+    "scripts/expand.py": "50ea543542160712e6d8deb25da866ea3158455a5e4c7f89ad5d212121376c26",
+    "protocol/formal-v1.json": "0cfdc5aafea818ee9c5ac599a3dd1f7959c643d44cfdd126ea664bc1c2d0a5c1",
+    "flash.py": "cba7eaf8ddd32d986625a6e6b237dc1ff72de4d85c670d8b8a6efbbd0672c213",
+    "scoring.py": "01776138999c57e857fbdadb84a1cffd159314ee4d2f68c05b6610f6b6caaf69",
+    "scripts/pilot.py": "611a79ef22cd9502ede73fae029fc0436a1498d5b6a6b11b0b01ea2d05dcb2ec",
+    "scripts/formal.py": "ea8fd6715853d293df2d49162f3a988da98a0bf8ea0eb81d0917d62b964eccd4",
+    "scripts/screen_candidates.py": "373bacc53eb54d637a581b3131faa6749e9b92c9df08f400ec2374ac6070906b",
+    "scripts/analyze_formal.py": "7ae3fb17b8fbcf887ab012c5bf56d03bc2edbe7d16b8f80b976277dde6af3e7e"
+  },
+  "chosen": [
+    {
+      "intervention_idx": 337,
+      "base_task_id": "f99d726_3",
+      "family": "f99d726",
+      "type": "VerbSwap",
+      "prefix_sha256": "a494933cf3ef360c1d4a32dc0ecef1188da906d13a894bbe1a2e2255150ef48a",
+      "boundary_sha256": "e5d9f10ab682e2fde508c17455e50c7afde47154bded6a8aa3d49deec7a42184",
+      "prefix_commits": 0,
+      "strategy_order": "ABC"
+    },
+    {
+      "intervention_idx": 313,
+      "base_task_id": "9bf2c8a_2",
+      "family": "9bf2c8a",
+      "type": "BothSwap",
+      "prefix_sha256": "a57c795f3357bef8e633d07ad183cb5e33093b18804f2dbc46495e356a039097",
+      "boundary_sha256": "c0a8f1d18208a17608c46dbe0cb2c22e95737bfbf61b41ae42f2c00a1654c10a",
+      "prefix_commits": 0,
+      "strategy_order": "BCA"
+    },
+    {
+      "intervention_idx": 327,
+      "base_task_id": "dcb2559_2",
+      "family": "dcb2559",
+      "type": "BothSwap",
+      "prefix_sha256": "629b0f579da2af421f8759e4b0347c2b76e52229892f8e74e7bf9ca7e3e1d033",
+      "boundary_sha256": "58d8146ee5c8861309a4e48847bf40507aa3ed9d0507cb2df30eb2f0b1746298",
+      "prefix_commits": 0,
+      "strategy_order": "CAB"
+    },
+    {
+      "intervention_idx": 834,
+      "base_task_id": "ff58e36_1",
+      "family": "ff58e36",
+      "type": "TargetDrop",
+      "prefix_sha256": "0687708c0f4306aa1231e95abe982c973bcbe79659e9a34f0c761947e29c7842",
+      "boundary_sha256": "4d23033507e342e8c36151c3973906b8f2f3e2e99b2d301b965248ed4d3b456d",
+      "prefix_commits": 5,
+      "strategy_order": "ACB"
+    },
+    {
+      "intervention_idx": 267,
+      "base_task_id": "22cc237_1",
+      "family": "22cc237",
+      "type": "TargetDrop",
+      "prefix_sha256": "ad06d93196864a2316079ca6e2c65f19258bfc8f34f4992dc3a04c4aa413df03",
+      "boundary_sha256": "d04d64a7ba6fa39975ff0d11011151f51a284105a0eef7c77ba8b25b3ea3e6b6",
+      "prefix_commits": 1,
+      "strategy_order": "CBA"
+    },
+    {
+      "intervention_idx": 351,
+      "base_task_id": "f099b4c_1",
+      "family": "f099b4c",
+      "type": "BothSwap",
+      "prefix_sha256": "81737284b8d567664b1190f1b27c397b8dbcf09a9eb53a55d7f7a84ca4add97c",
+      "boundary_sha256": "e1ac0302ac5f3de8636acc75382204d30d55339bf2001137b7cfeef4d7dcc025",
+      "prefix_commits": 0,
+      "strategy_order": "BAC"
+    },
+    {
+      "intervention_idx": 356,
+      "base_task_id": "ffe6d5e_3",
+      "family": "ffe6d5e",
+      "type": "BothSwap",
+      "prefix_sha256": "186ec57401e89b1382d35fb046334edeae68c2d076aec636bb24fe3505415006",
+      "boundary_sha256": "42ba78541ec57a40a65a938d523106089384a69c531821613c2af12a793a8598",
+      "prefix_commits": 0,
+      "strategy_order": "ABC"
+    },
+    {
+      "intervention_idx": 335,
+      "base_task_id": "7264edc_1",
+      "family": "7264edc",
+      "type": "BothSwap",
+      "prefix_sha256": "04793069640568a65446478be455d69bcb37fbeba27cba38fcf867df2d78736c",
+      "boundary_sha256": "b5ba15e1f48b9d92024bbbb29d24f2009997ea7315d928775f06a1082e4bbbae",
+      "prefix_commits": 0,
+      "strategy_order": "BCA"
+    },
+    {
+      "intervention_idx": 359,
+      "base_task_id": "59bcfc8_1",
+      "family": "59bcfc8",
+      "type": "VerbSwap",
+      "prefix_sha256": "dbd1c979f55c896ee9b94da33be2bd228ca4e243b410a9621c54570153f20591",
+      "boundary_sha256": "534c4e92a695d6e26c9d4444b8d7885a3d03f5560346cde511a290accca143c0",
+      "prefix_commits": 1,
+      "strategy_order": "CAB"
+    },
+    {
+      "intervention_idx": 43,
+      "base_task_id": "32616b5_1",
+      "family": "32616b5",
+      "type": "BothSwap",
+      "prefix_sha256": "de730ab5c09ef03225b2835fd0f61f4e8cd5c9028f48a1d7805a786c38a7942e",
+      "boundary_sha256": "cfd2b956d144e1c5f4719edcef0d27a1d9c2dc35385178889d1925572baa5540",
+      "prefix_commits": 0,
+      "strategy_order": "ACB"
+    },
+    {
+      "intervention_idx": 28,
+      "base_task_id": "cf6abd2_1",
+      "family": "cf6abd2",
+      "type": "BothSwap",
+      "prefix_sha256": "b77fbaaf212a424b1db96f88bf5d52de71ab82bb1b41d1c31387b96db2c9c40f",
+      "boundary_sha256": "64f1920c577486421a7ea4834d2d6a27cc71df46d2c63d597bbd4491873b3f8a",
+      "prefix_commits": 0,
+      "strategy_order": "CBA"
+    },
+    {
+      "intervention_idx": 312,
+      "base_task_id": "5e27cd7_3",
+      "family": "5e27cd7",
+      "type": "BothSwap",
+      "prefix_sha256": "0687f8f7bb9f32c142969738018d647687b949052ade183525b1d89eed27f663",
+      "boundary_sha256": "d3e6fc7e5e2bc3f87efc2bfd26f816441a4ed31bfb803fa2c5102793aa2defad",
+      "prefix_commits": 0,
+      "strategy_order": "BAC"
+    },
+    {
+      "intervention_idx": 269,
+      "base_task_id": "29caf6f_2",
+      "family": "29caf6f",
+      "type": "TargetDrop",
+      "prefix_sha256": "3f49512c27d450ba5a90a5630a82344db9e227c048daef607eca7c905080c7e2",
+      "boundary_sha256": "4e5b4955c236535a727fe8c43ae44f876c9f2ada0ad7ffbd0289f1cf0885df45",
+      "prefix_commits": 0,
+      "strategy_order": "ABC"
+    },
+    {
+      "intervention_idx": 333,
+      "base_task_id": "69ba40f_1",
+      "family": "69ba40f",
+      "type": "BothSwap",
+      "prefix_sha256": "0a964940a4f299332c90b06c7f4746fb48a99854657306f09b0f1855651185ac",
+      "boundary_sha256": "6bf4f93aedd0f64ee863be48d78813b0a5e64bc400116547e9102ff9a56aa58e",
+      "prefix_commits": 0,
+      "strategy_order": "BCA"
+    },
+    {
+      "intervention_idx": 2,
+      "base_task_id": "60d0b5b_3",
+      "family": "60d0b5b",
+      "type": "BothSwap",
+      "prefix_sha256": "738b931a912a521340b017e250814a4f133607d70940bf9d1928baf7bfffe8a2",
+      "boundary_sha256": "3c1dc7427a85787120ed73ea473bdbc97d62f823ddd49de27eecabc2716f5229",
+      "prefix_commits": 0,
+      "strategy_order": "CAB"
+    },
+    {
+      "intervention_idx": 296,
+      "base_task_id": "0de03ea_1",
+      "family": "0de03ea",
+      "type": "BothSwap",
+      "prefix_sha256": "2c3912169d48e0f1f8da0e03b2eadb13c2c28ee9dcae551e5260652a71cfcdf2",
+      "boundary_sha256": "284253e67c076602724e67af4c33937931391f01b3951766ca89195039419a1e",
+      "prefix_commits": 0,
+      "strategy_order": "ACB"
+    },
+    {
+      "intervention_idx": 336,
+      "base_task_id": "ec437da_3",
+      "family": "ec437da",
+      "type": "BothSwap",
+      "prefix_sha256": "3a483118ce55f8a72ba478fe2f1ed63db1c305a87c318234da2d727f56e8ede4",
+      "boundary_sha256": "06b147edd3515207afaacdf639ff8fb3ebe5d9bac27382be9cdb8cfe177a3518",
+      "prefix_commits": 2,
+      "strategy_order": "CBA"
+    },
+    {
+      "intervention_idx": 841,
+      "base_task_id": "92fe421_1",
+      "family": "92fe421",
+      "type": "TargetDrop",
+      "prefix_sha256": "4045b876d8c2f42805ad081b74f1a8972e09647e5eac1285dc11ff4ca2e947b1",
+      "boundary_sha256": "f61643fb066f15ec6730e9cc8fb867a5e20239e2e7a97fcdef20321f1ab5b36b",
+      "prefix_commits": 1,
+      "strategy_order": "BAC"
+    },
+    {
+      "intervention_idx": 294,
+      "base_task_id": "6474048_2",
+      "family": "6474048",
+      "type": "VerbSwap",
+      "prefix_sha256": "cf3a0c50ebbce02647661556d89f2fda8cad1a02ba71d66fa4c5f7854fafde61",
+      "boundary_sha256": "8eb8fe15d7f923f19d544c8503a9854c0ba4ba1dc4e0645d50a8b352824ae648",
+      "prefix_commits": 1,
+      "strategy_order": "ABC"
+    },
+    {
+      "intervention_idx": 763,
+      "base_task_id": "9dabbc9_1",
+      "family": "9dabbc9",
+      "type": "VerbDrop",
+      "prefix_sha256": "6d96da17e9b2545ed4e23825d1b3392f8055164937a02b834c658973b22cbd20",
+      "boundary_sha256": "43bda2e9a10ab3b120bb1151f0d5c26228649ddf87c51b771c9d5909d7fe98c8",
+      "prefix_commits": 0,
+      "strategy_order": "BCA"
+    },
+    {
+      "intervention_idx": 842,
+      "base_task_id": "986aa4e_2",
+      "family": "986aa4e",
+      "type": "TargetDrop",
+      "prefix_sha256": "04b16f84abde4da98c5576b559ce61ea78ad862d80c1c33b09a0840154d16743",
+      "boundary_sha256": "fe18dd54829441d97f9b738a8c26253e9f055e5afa0695fb15a466cd5a22a76a",
+      "prefix_commits": 0,
+      "strategy_order": "CAB"
+    }
+  ],
+  "excluded": [
+    {
+      "intervention_idx": 265,
+      "base_task_id": "34d9492_2",
+      "family": "34d9492",
+      "type": "TargetDrop",
+      "reason": "prefix_call_limit"
+    },
+    {
+      "intervention_idx": 797,
+      "base_task_id": "f3f60f0_3",
+      "family": "f3f60f0",
+      "type": "TargetDrop",
+      "reason": "prefix_call_limit"
+    },
+    {
+      "intervention_idx": 323,
+      "base_task_id": "ce73d68_2",
+      "family": "ce73d68",
+      "type": "BothSwap",
+      "reason": "prefix_call_limit"
+    },
+    {
+      "intervention_idx": 26,
+      "base_task_id": "b0a8eae_1",
+      "family": "b0a8eae",
+      "type": "VerbSwap",
+      "reason": "stopped_without_tool_before_boundary"
+    },
+    {
+      "intervention_idx": 276,
+      "base_task_id": "b6d1f70_3",
+      "family": "b6d1f70",
+      "type": "TargetDrop",
+      "reason": "stopped_without_tool_before_boundary"
+    },
+    {
+      "intervention_idx": 367,
+      "base_task_id": "cdaaea5_2",
+      "family": "cdaaea5",
+      "type": "VerbSwap",
+      "reason": "prefix_call_limit"
+    },
+    {
+      "intervention_idx": 285,
+      "base_task_id": "a97e35d_1",
+      "family": "a97e35d",
+      "type": "TargetDrop",
+      "reason": "prefix_call_limit"
+    },
+    {
+      "intervention_idx": 319,
+      "base_task_id": "b0934aa_2",
+      "family": "b0934aa",
+      "type": "BothSwap",
+      "reason": "stopped_without_tool_before_boundary"
+    },
+    {
+      "intervention_idx": 318,
+      "base_task_id": "690d51b_1",
+      "family": "690d51b",
+      "type": "BothSwap",
+      "reason": "stopped_without_tool_before_boundary"
+    },
+    {
+      "intervention_idx": 248,
+      "base_task_id": "6104387_2",
+      "family": "6104387",
+      "type": "VerbDrop",
+      "reason": "prefix_call_limit"
+    },
+    {
+      "intervention_idx": 486,
+      "base_task_id": "d9987f6_2",
+      "family": "d9987f6",
+      "type": "BothSwap",
+      "reason": "rejected"
+    }
+  ],
+  "unscreened": [
+    {
+      "intervention_idx": 343,
+      "base_task_id": "dbc0276_1",
+      "family": "dbc0276",
+      "type": "BothSwap"
+    },
+    {
+      "intervention_idx": 844,
+      "base_task_id": "a676f2a_1",
+      "family": "a676f2a",
+      "type": "TargetDrop"
+    },
+    {
+      "intervention_idx": 365,
+      "base_task_id": "adb1060_1",
+      "family": "adb1060",
+      "type": "BothSwap"
+    },
+    {
+      "intervention_idx": 346,
+      "base_task_id": "7bdaf23_3",
+      "family": "7bdaf23",
+      "type": "BothSwap"
+    },
+    {
+      "intervention_idx": 252,
+      "base_task_id": "b71318e_1",
+      "family": "b71318e",
+      "type": "TargetDrop"
+    },
+    {
+      "intervention_idx": 300,
+      "base_task_id": "1a79e37_1",
+      "family": "1a79e37",
+      "type": "VerbSwap"
+    },
+    {
+      "intervention_idx": 31,
+      "base_task_id": "906f2c7_1",
+      "family": "906f2c7",
+      "type": "VerbSwap"
+    },
+    {
+      "intervention_idx": 769,
+      "base_task_id": "f6f2e67_2",
+      "family": "f6f2e67",
+      "type": "VerbDrop"
+    },
+    {
+      "intervention_idx": 368,
+      "base_task_id": "f3a6713_1",
+      "family": "f3a6713",
+      "type": "VerbSwap"
+    },
+    {
+      "intervention_idx": 42,
+      "base_task_id": "4ac4a8d_1",
+      "family": "4ac4a8d",
+      "type": "BothSwap"
+    },
+    {
+      "intervention_idx": 286,
+      "base_task_id": "e70b117_1",
+      "family": "e70b117",
+      "type": "TargetDrop"
+    },
+    {
+      "intervention_idx": 340,
+      "base_task_id": "2e9b91e_1",
+      "family": "2e9b91e",
+      "type": "BothSwap"
+    },
+    {
+      "intervention_idx": 342,
+      "base_task_id": "baeb104_2",
+      "family": "baeb104",
+      "type": "BothSwap"
+    },
+    {
+      "intervention_idx": 760,
+      "base_task_id": "83a7951_2",
+      "family": "83a7951",
+      "type": "VerbDrop"
+    },
+    {
+      "intervention_idx": 353,
+      "base_task_id": "fddb6b6_3",
+      "family": "fddb6b6",
+      "type": "BothSwap"
+    },
+    {
+      "intervention_idx": 347,
+      "base_task_id": "96bf160_1",
+      "family": "96bf160",
+      "type": "BothSwap"
+    },
+    {
+      "intervention_idx": 271,
+      "base_task_id": "3c13f5a_1",
+      "family": "3c13f5a",
+      "type": "TargetDrop"
+    },
+    {
+      "intervention_idx": 34,
+      "base_task_id": "6b6ca61_1",
+      "family": "6b6ca61",
+      "type": "BothSwap"
+    }
+  ]
+}
